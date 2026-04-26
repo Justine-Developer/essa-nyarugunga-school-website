@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ESSA Nyarugunga School</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-placeholder">
+                    <img src="https://via.placeholder.com/50x50?text=ESSA+Logo" alt="ESSA Logo" class="real-logo">
+                </div>
+                <div class="logo-text">
+                    <h1>ESSA Nyarugunga</h1>
+                    <p>Ecole Secondaire Des Science et Administrative</p>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="../about/"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="../admissions/"><i class="fas fa-door-open"></i> Admissions</a></li>
+                <li><a href="../academic/"><i class="fas fa-book"></i> Academics</a></li>
+                <li><a href="../Gallery/"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="#" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-envelope"></i> Contact Us</h1>
+            <p>We'd love to hear from you | Get in touch with us today</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-cards">
+        <div class="container">
+            <div class="cards-grid">
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Nyarugunga Sector, Kicukiro District</p>
+                    <p>Kigali, Rwanda</p>
+                    <a href="#" class="card-link" id="openMap">View on Map <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p><strong>Main Office:</strong> +250 788 123 456</p>
+                    <p><strong>Admissions:</strong> +250 788 123 457</p>
+                    <p><strong>Emergency:</strong> +250 788 123 458</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p><strong>General:</strong> info@essanyarugunga.rw</p>
+                    <p><strong>Admissions:</strong> admissions@essanyarugunga.rw</p>
+                    <p><strong>Support:</strong> support@essanyarugunga.rw</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Office Hours</h3>
+                    <p><strong>Mon - Fri:</strong> 8:00 AM - 5:00 PM</p>
+                    <p><strong>Saturday:</strong> 9:00 AM - 12:00 PM</p>
+                    <p><strong>Sunday:</strong> Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Contact Form Section -->
+    <section class="map-form-section">
+        <div class="container">
+            <div class="map-form-grid">
+                <!-- Google Maps Embed -->
+                <div class="map-container">
+                    <h3><i class="fas fa-map"></i> Our Location</h3>
+                    <div class="map-wrapper" id="mapWrapper">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.477860813629!2d30.109888!3d-1.977408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca76c8d5b5b5b%3A0x8b5b5b5b5b5b5b5b!2sNyarugunga%2C%20Kigali!5e0!3m2!1sen!2srw!4v1700000000000!5m2!1sen!2srw" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="map-address">
+                        <i class="fas fa-location-dot"></i>
+                        <span>ESSA Nyarugunga, near Nyarugunga Market, Kigali</span>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="form-container">
+                    <h3><i class="fas fa-paper-plane"></i> Send Us a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <div class="input-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" placeholder="Your Full Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" placeholder="Your Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="phone" placeholder="Your Phone Number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon">
+                                <i class="fas fa-tag"></i>
+                                <select id="subject">
+                                    <option value="general">General Inquiry</option>
+                                    <option value="admissions">Admissions Question</option>
+                                    <option value="academic">Academic Support</option>
+                                    <option value="complaint">Complaint/Suggestion</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon">
+                                <i class="fas fa-comment"></i>
+                                <textarea id="message" rows="5" placeholder="Your Message..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Department Contacts -->
+    <section class="departments-contact">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-building"></i> Contact Specific Departments</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Reach out directly to the department you need</p>
+            </div>
+            <div class="dept-contact-grid">
+                <div class="dept-contact-card">
+                    <div class="dept-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h4>Admissions Office</h4>
+                    <p>For applications, enrollment, and admission inquiries</p>
+                    <div class="dept-contact-info">
+                        <span><i class="fas fa-phone"></i> +250 788 123 457</span>
+                        <span><i class="fas fa-envelope"></i> admissions@essanyarugunga.rw</span>
+                    </div>
+                </div>
+                <div class="dept-contact-card">
+                    <div class="dept-icon"><i class="fas fa-chalkboard-user"></i></div>
+                    <h4>Academic Office</h4>
+                    <p>Curriculum, exams, schedules, and academic records</p>
+                    <div class="dept-contact-info">
+                        <span><i class="fas fa-phone"></i> +250 788 123 456</span>
+                        <span><i class="fas fa-envelope"></i> academic@essanyarugunga.rw</span>
+                    </div>
+                </div>
+                <div class="dept-contact-card">
+                    <div class="dept-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h4>Finance Office</h4>
+                    <p>Fee payments, scholarships, and financial aid</p>
+                    <div class="dept-contact-info">
+                        <span><i class="fas fa-phone"></i> +250 788 123 459</span>
+                        <span><i class="fas fa-envelope"></i> finance@essanyarugunga.rw</span>
+                    </div>
+                </div>
+                <div class="dept-contact-card">
+                    <div class="dept-icon"><i class="fas fa-users"></i></div>
+                    <h4>Student Affairs</h4>
+                    <p>Student welfare, discipline, and extracurriculars</p>
+                    <div class="dept-contact-info">
+                        <span><i class="fas fa-phone"></i> +250 788 123 460</span>
+                        <span><i class="fas fa-envelope"></i> studentaffairs@essanyarugunga.rw</span>
+                    </div>
+                </div>
+                <div class="dept-contact-card">
+                    <div class="dept-icon"><i class="fas fa-church"></i></div>
+                    <h4>Chaplaincy</h4>
+                    <p>Spiritual guidance, chapel services, and counseling</p>
+                    <div class="dept-contact-info">
+                        <span><i class="fas fa-phone"></i> +250 788 123 461</span>
+                        <span><i class="fas fa-envelope"></i> chaplain@essanyarugunga.rw</span>
+                    </div>
+                </div>
+                <div class="dept-contact-card">
+                    <div class="dept-icon"><i class="fas fa-headset"></i></div>
+                    <h4>IT Support</h4>
+                    <p>Technical support, online learning, and system issues</p>
+                    <div class="dept-contact-info">
+                        <span><i class="fas fa-phone"></i> +250 788 123 462</span>
+                        <span><i class="fas fa-envelope"></i> it@essanyarugunga.rw</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <div class="social-content">
+                <h2><i class="fas fa-share-alt"></i> Connect With Us</h2>
+                <p>Follow us on social media for updates, news, and events</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-icon twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" class="social-icon instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-icon linkedin" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-icon youtube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                    <a href="#" class="social-icon whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Contact Section -->
+    <section class="faq-contact">
+        <div class="container">
+            <div class="faq-contact-grid">
+                <div class="faq-preview">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Frequently Asked Questions</h3>
+                    <p>Find quick answers to common questions</p>
+                    <a href="../faq/" class="btn-faq">View FAQs <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="support-preview">
+                    <i class="fas fa-headset"></i>
+                    <h3>Need Immediate Help?</h3>
+                    <p>Our support team is available during office hours</p>
+                    <a href="#" class="btn-support" id="liveChatBtn"><i class="fas fa-comment-dots"></i> Live Chat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>ESSA Nyarugunga</h3>
+                    </div>
+                    <p>École Secondaire des Sciences et Administrative - Committed to excellence in education, character formation, and holistic development.</p>
+                    <div class="footer-badges">
+                        <span><i class="fas fa-check-circle"></i> Ministry of Education</span>
+                        <span><i class="fas fa-check-circle"></i> REB Accredited</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4><i class="fas fa-link"></i> Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="../about/"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="../admissions/"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                        <li><a href="../academic/"><i class="fas fa-chevron-right"></i> Academics</a></li>
+                        <li><a href="../Gallery/"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-resources">
+                    <h4><i class="fas fa-folder-open"></i> Resources</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-file-pdf"></i> School Calendar</a></li>
+                        <li><a href="#"><i class="fas fa-file-pdf"></i> Academic Handbook</a></li>
+                        <li><a href="#"><i class="fas fa-file-pdf"></i> Fee Structure</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4><i class="fas fa-newspaper"></i> Newsletter</h4>
+                    <p>Subscribe for updates on events, results, and news.</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletterEmail" placeholder="Your email address">
+                        <button id="newsletterBtn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <h4 style="margin-top: 20px;"><i class="fas fa-phone-alt"></i> Emergency Contact</h4>
+                    <p class="emergency-phone">+250 788 123 456 (24/7)</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2026 ESSA Nyarugunga School. All rights reserved. | Designed with <i class="fas fa-heart"></i> for excellence</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Modal -->
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-modal-content">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <i class="fas fa-headset"></i>
+                    <span>ESSA Support Team</span>
+                </div>
+                <span class="chat-close">&times;</span>
+            </div>
+            <div class="chat-body">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="chat-message bot">
+                        <div class="message-content">
+                            Hello! 👋 Welcome to ESSA Nyarugunga support. How can we help you today?
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="chatInput" placeholder="Type your message...">
+                    <button id="chatSendBtn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- WhatsApp Chat Button -->
+    <a href="https://wa.me/250788123456?text=Hello%20ESSA%20Nyarugunga%2C%20I%20have%20a%20question%20about" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat on WhatsApp</span>
+    </a>
+
+    <script src="../js/contact.js"></script>
+</body>
+</html>

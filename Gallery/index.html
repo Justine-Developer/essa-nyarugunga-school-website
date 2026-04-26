@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | ESSA Nyarugunga School</title>
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-placeholder">
+                    <img src="https://via.placeholder.com/50x50?text=ESSA+Logo" alt="ESSA Logo" class="real-logo">
+                </div>
+                <div class="logo-text">
+                    <h1>ESSA Nyarugunga</h1>
+                    <p>Ecole Secondaire Des Science et Administrative</p>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="../about/"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="../admissions/"><i class="fas fa-door-open"></i> Admissions</a></li>
+                <li><a href="../academic/"><i class="fas fa-book"></i> Academics</a></li>
+                <li><a href="#" class="active"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="../contact/"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-images"></i> Our Gallery</h1>
+            <p>Moments that define our journey | Capturing memories at ESSA Nyarugunga</p>
+        </div>
+    </section>
+
+    <!-- Gallery Stats -->
+    <section class="gallery-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <i class="fas fa-camera"></i>
+                    <span class="stat-number" data-target="245">0</span>
+                    <span class="stat-label">Photos Captured</span>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-video"></i>
+                    <span class="stat-number" data-target="28">0</span>
+                    <span class="stat-label">Videos</span>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-label">Events Covered</span>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-smile"></i>
+                    <span class="stat-number" data-target="1000">0</span>
+                    <span class="stat-label">Happy Moments</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-images"></i> Photo Gallery</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Explore our campus life through photos</p>
+            </div>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="academic">Academic</button>
+                <button class="filter-btn" data-filter="sports">Sports & Games</button>
+                <button class="filter-btn" data-filter="cultural">Cultural Events</button>
+                <button class="filter-btn" data-filter="campus">Campus</button>
+                <button class="filter-btn" data-filter="graduation">Graduation</button>
+            </div>
+
+            <!-- Photo Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Academic Category -->
+                <div class="gallery-item" data-category="academic">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop" alt="Classroom Session">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Classroom Session</h4>
+                        <p>Academic Excellence</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="academic">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=300&fit=crop" alt="Science Lab">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Science Laboratory</h4>
+                        <p>Practical Learning</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="academic">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop" alt="Computer Lab">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Computer Lab</h4>
+                        <p>ICT Classes</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="academic">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=400&h=300&fit=crop" alt="Library">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>School Library</h4>
+                        <p>Reading Session</p>
+                    </div>
+                </div>
+
+                <!-- Sports Category -->
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?w=400&h=300&fit=crop" alt="Football Match">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Football Tournament</h4>
+                        <p>Inter-school Competition</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=300&fit=crop" alt="Basketball">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Basketball Game</h4>
+                        <p>Sports Day 2025</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=400&h=300&fit=crop" alt="Athletics">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Athletics</h4>
+                        <p>Track Events</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=400&h=300&fit=crop" alt="Volleyball">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Volleyball</h4>
+                        <p>Girls' Team</p>
+                    </div>
+                </div>
+
+                <!-- Cultural Events Category -->
+                <div class="gallery-item" data-category="cultural">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=300&fit=crop" alt="Music Concert">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Music Concert</h4>
+                        <p>Annual Cultural Day</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cultural">
+                    <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=400&h=300&fit=crop" alt="Traditional Dance">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Traditional Dance</h4>
+                        <p>Cultural Performance</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cultural">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=400&h=300&fit=crop" alt="Art Exhibition">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Art Exhibition</h4>
+                        <p>Student Creativity</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cultural">
+                    <img src="https://images.unsplash.com/photo-1501612780327-45045538702b?w=400&h=300&fit=crop" alt="Drama Club">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Drama Club</h4>
+                        <p>Theatre Performance</p>
+                    </div>
+                </div>
+
+                <!-- Campus Category -->
+                <div class="gallery-item" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=300&fit=crop" alt="School Building">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Main Building</h4>
+                        <p>School Campus</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop" alt="School Garden">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>School Garden</h4>
+                        <p>Green Environment</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&h=300&fit=crop" alt="Chapel">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>School Chapel</h4>
+                        <p>Spiritual Center</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400&h=300&fit=crop" alt="Library Interior">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Library Interior</h4>
+                        <p>Study Area</p>
+                    </div>
+                </div>
+
+                <!-- Graduation Category -->
+                <div class="gallery-item" data-category="graduation">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop" alt="Graduation Ceremony">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Graduation 2025</h4>
+                        <p>S6 Graduates</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="graduation">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop" alt="Award Ceremony">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Award Ceremony</h4>
+                        <p>Top Performers</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="graduation">
+                    <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=400&h=300&fit=crop" alt="Diploma Distribution">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Diploma Day</h4>
+                        <p>Celebrating Success</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button id="loadMoreBtn" class="btn-load-more">
+                    <i class="fas fa-sync-alt"></i> Load More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-video"></i> Video Gallery</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Watch highlights from our school events</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop" alt="School Tour">
+                        <div class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>School Campus Tour</h4>
+                        <p>Take a virtual tour of our beautiful campus</p>
+                        <span><i class="fas fa-eye"></i> 2.5K views</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=250&fit=crop" alt="Cultural Day">
+                        <div class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Cultural Day 2025</h4>
+                        <p>Traditional performances and celebrations</p>
+                        <span><i class="fas fa-eye"></i> 1.8K views</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?w=400&h=250&fit=crop" alt="Sports Day">
+                        <div class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Annual Sports Day</h4>
+                        <p>Highlights from the big event</p>
+                        <span><i class="fas fa-eye"></i> 3.2K views</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=250&fit=crop" alt="Graduation">
+                        <div class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Graduation Ceremony 2025</h4>
+                        <p>S6 Graduation highlights</p>
+                        <span><i class="fas fa-eye"></i> 4.1K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <span class="prev-lightbox"><i class="fas fa-chevron-left"></i></span>
+        <span class="next-lightbox"><i class="fas fa-chevron-right"></i></span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="close-video">&times;</span>
+            <iframe id="videoFrame" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>ESSA Nyarugunga</h3>
+                    </div>
+                    <p>École Secondaire des Sciences et Administrative - Committed to excellence in education, character formation, and holistic development.</p>
+                    <div class="footer-badges">
+                        <span><i class="fas fa-check-circle"></i> Ministry of Education</span>
+                        <span><i class="fas fa-check-circle"></i> REB Accredited</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4><i class="fas fa-link"></i> Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="../about/"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="../admissions/"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                        <li><a href="../academic/"><i class="fas fa-chevron-right"></i> Academics</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="../contact/"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-resources">
+                    <h4><i class="fas fa-folder-open"></i> Resources</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-file-pdf"></i> School Calendar</a></li>
+                        <li><a href="#"><i class="fas fa-file-pdf"></i> Academic Handbook</a></li>
+                        <li><a href="#"><i class="fas fa-file-pdf"></i> Fee Structure</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4><i class="fas fa-newspaper"></i> Newsletter</h4>
+                    <p>Subscribe for updates on events, results, and news.</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletterEmail" placeholder="Your email address">
+                        <button id="newsletterBtn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <h4 style="margin-top: 20px;"><i class="fas fa-phone-alt"></i> Emergency Contact</h4>
+                    <p class="emergency-phone">+250 788 123 456 (24/7)</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2026 ESSA Nyarugunga School. All rights reserved. | Designed with <i class="fas fa-heart"></i> for excellence</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
